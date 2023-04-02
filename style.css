@@ -1,76 +1,114 @@
 body{
-  font-family: 'Open Sans', sans-serif;   
-  background-color: #fff; 
-}
-#pic{
-  text-align: center;
-  margin: auto;
-  width: 350px;
-}
-#pic img{
-  margin-top: 64px;
-  margin-bottom: 32px;
-}
-h1{
-  font-family: 'Dosis', sans-serif;
-  font-style: normal;
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 40px;
-  color: #3F3D56;
-  text-align: center;
-  margin-bottom: 16px;
-}
-h1 span{
-  color: #EE24FF;
-}
-.paragraph{
-  text-align: center;
-  color: #828282;
-  font-weight: 400;
-  font-size: 15px;
-}
-.first{
-  line-height: 22px;
-}
-.second{
-  font-style: normal;
-  line-height: 22px;
-  margin-bottom: 32px;
-}
-.third{
-  font-style: normal;
-  line-height: 20px;
-  margin-bottom: 64px;
-}
-body b{
-  color: #3F3D56;
-}
-#line{
-  width: 391px;
-  height: 0px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
 
-  margin: auto;
-  margin-bottom: 20px;
-  border: 1px solid #ECEFF2;
+  background: rgb(237,244,236);
+  background: linear-gradient(180deg, rgba(237,244,236,0.4907212885154062) 59%, rgba(46,191,51,0.27503501400560226) 82%);
+  
+  min-height: 100vh;
 }
-.botoes{
-  font-style: normal;
-  text-align: center;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 147.68%;
+
+.page{
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+ul{
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: #1F1534;
+  text-decoration: none;
+}
+
+u li a{
+  opacity: 0.5;
+}
+
+ul li a:hover{
+  font-weight: bold;
+  opacity: 1;
+}
+
+h1, ul{
+  font-family: 'Mulish', sans-serif;
+}
+
+h1{
+  font-size: 49px;
+  line-height: 56px;
+  color: #1F1534;
+  font-weight: normal;
+}
+
+h1 span{
+  color: #89C5CC;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section p{
+  font-size: 14px;
+  line-height: 28px;
+  color: #7D7987;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
-#footer{
-  font-style: normal;
-  text-align: center;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 147.68%;
-  width: 100%;
+
+section button{
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+
+  background: #69B99D;
+  border: none;
+  padding: 14px 32px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 4px;
+
+  cursor: pointer;
 }
-a{
-  color: #3F3D56;
-  margin-left: 42px;
+
+section button:hover{
+  background: #418f74;
+}
+
+footer{
+  font-size: 14px;
+  line-height: 28px;
+
+  text-align: center;
+  margin-top: 82px;
+}
+
+footer a{
+  font-weight: bold;
+}
+
+#balls{
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
