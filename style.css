@@ -7,84 +7,204 @@
   font-size: 62.5%;
 }
 .page{
-  width: 384px;
-  height: 1995px;
+  width: 430px;
+  height: 565px;
+  text-align: center;
   margin: auto;
 }
-
-header{
-  text-align: center;
-  background: #8E9AAF;
-  height:  27.9rem;
+body{
+  font-family: 'Mulish', sans-serif;
 }
-header img{
-  margin-top: 3.2rem;
+header{
+  background: #F9F4FB;
+  width: 430px;
+  height: 679px;
 }
 header h1{
-  font-family: 'Staatliches', cursive;
-  font-weight: 400;
-  font-size: 4.0rem;
-  line-height: 3.4rem;
-  letter-spacing: 0.05em;
-  margin-top: 3.2rem;
-  margin-bottom: 5.0rem;
-  color: #fff;
-  background-color: #CBC0D3;
+  font-size: 3.2rem;
+  line-height: 4.0rem;
+  color: #B52184;
+
+  margin-top: 1.7rem;
+  margin-bottom: 5px;
+}
+header p{
+  font-size: 2.0rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  color: #312D64;
+}
+.rectangle{
+  margin: auto; 
+  margin-top: 70px;
 }
 main{
-  background: #EFF1FF;
+  text-align: center;
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+  display: flex;
+  flex-direction: column;
+  gap: 4.9rem;
+  width: 430px;
+}
+main h2{
+  font-size: 2.9rem;
+  line-height: 3.7rem;
+  color: #B52184;
 }
 main p{
-  font-family: 'Palanquin', sans-serif;
-  font-weight: 400;
-  font-size: 2.0rem;
-  line-height: 1.5rem;
-  color:  #23053A;
-
+font-weight: 600;
+font-size: 1.6rem;
+line-height: 2.0rem;
+color: #312D64;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.0rem;
+  margin-left: 3.9rem;
+  margin-right: 3.9rem;
+  border: 1px solid #FFF;
+  border-radius: 2.0rem;
+  background-color: #FFF;
+}
+#card-one{
+  margin-top: 4.0rem;
+}
+.cards img{
+  padding-top: 30px;
+  padding-left: 26px;
+  padding-right: 250px;
+}
+.cards p{
+  text-align: left;
+  padding-left: 26px;
+  padding-bottom: 10px;
+}
+#last-card{
+  margin-bottom: 4.0rem;
+}
+section{
+  width: 43.0rem;
+  height: 61.0rem;
+  background: #F9F4FB
+}
+section fieldset{
+  border: none;
+}
+section legend{
+  font-size: 3.2rem;
+  line-height: 4.0rem;
+  font-weight: 900;
+  color: #B52184;
+  padding-top: 7.8rem;
+  padding-left: 4.0rem;
+  padding-right: 11.8rem;
+  padding-bottom: 4.3rem;
+}
+.input-wraper{
+  display: block;
+  padding-bottom: 3.6rem;
+}
+.input-label{
+  display: block;
+  font-size: 1.5rem;
+  color: #B52184;
   text-align: center;
-  padding-top: 1.4rem;
-  padding-left: 3.6rem;
-  padding-right: 4.3rem;
-  margin-bottom: 6.3rem;
 }
-.wraper-img{
-  position: relative;
+.input-wraper input{
+  width: 34.8rem;
+  height: 4.8rem;
+  border: 1.5px solid #312D64;
+  border-radius: 1.6rem;
+  padding-left: 1.2rem;
 }
-.wraper-img img{
-  border-radius: 2.0rem;
-  margin: 0 3.2rem 3.2rem;
-  animation-name: downtop;
-  animation-duration: 700ms;
-  animation-delay: 200ms;
-  animation-fill-mode: forwards;
+section textarea{
+  font-family: 'Mulish', sans-serif;
+  width: 348px;
+  height: 126px;
+  border: 1.5px solid #312D64;
+  border-radius: 1.6rem;
+  margin-bottom: 2.4rem;
+  padding-top: 1.6rem;
+  padding-left: 1.2rem;
 }
-.wraper-img img:hover{
-  opacity: 0.5;
-}
-.wraper-img h2{
-  font-family: 'Staatliches', cursive;
-  font-size: 2.0rem;
-  line-height: 3.4rem;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  color: #4A4E69;  
 
-  border-radius: 2.0rem;
-  background-color: #FEEAFA;
-  width: 11.2rem;
-  height: 3.5rem;
-  padding: 1px 2.4rem;
-  position: absolute;
-  top: 1.6rem;
-  left: 22.0rem;
+#button input{
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  border-radius: 1.6rem;
+
+  width: 15.1rem;
+  height: 4.5rem;
+  margin-left: 4.3rem;
+  margin-right: 23.6rem;
+
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
 }
-@keyframes downtop{
-  0% {
-    opacity: 0;
-    transform: translateY( 15px);
+footer{
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+  width: 43.0rem;
+  height: 8.0rem;
+}
+footer p{
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+  padding-top: 3.2rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+@media (min-width: 70.0rem){
+  .page{
+    width: 146.5rem;
+    height: 186.5rem;
   }
-  100%{
-    opacity: 1;
-    transform: translateY(0);
+  header{
+    width: 100%;
+  }
+  .hero-text{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+   
+  }
+  .rectangle{
+    margin-top: 8.0rem;
+  }
+  main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #card-one{
+    margin: auto;
+    margin-left: 7.5rem;
+    margin-top: 6.0rem;
+    margin-bottom: 6.0rem;
+  }
+  #last-card{
+    margin: auto;
+    margin-right: 100px;
+  }
+  section{
+    width: 100%;
+    background-image: url(images/estrelas-rosas.png);
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: bottom right;
+    display: flex;
+    align-items: center;
+  }
+  section form{
+    margin-left: 80px;
+  }
+  footer{
+    width: 100%;
   }
 }
