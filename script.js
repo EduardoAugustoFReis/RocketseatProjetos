@@ -1,37 +1,34 @@
-let students = [
-{
-    name: "Ana",
-    score1: 8.2,
-    score2:  7.6
-},
-{
-  name: "Daniel",
-  score1: 7.4,
-  score2:  6.7
-},
-{
-  name: "Caio",
-  score1: 3.7,
-  score2:  5.8
-}
-]
+const screem1 = document.querySelector(".screenOne");
+const screem2 =  document.querySelector(".screenTwo");
 
-function avarage(stud){
-  let avg = ((stud.score1 + stud.score2) / 2).toFixed(2);
-  
-  if(avg >=7){
-    alert(`
-    A média do(a) aluno(a) ${stud.name} é: ${avg} 
-    Parabéns, ${stud.name} você foi aprovado(a) no concurso
-    `)
-  }else{
-    alert(`
-    A média do(a) aluno(a) ${stud.name} é: ${avg}
-    Não foi dessa vez, ${stud.name} ! Tente novamnete
-    `)
+let randomNumber = Math.round((Math.random() * 10)); 
+let attempts = 1;
+
+// função callback
+function handleTryClick(event){
+  event.preventDefault(); // não realizar o padrão
+
+  let inputNumber = document.querySelector("#inputNumber");
+
+  if(Number(inputNumber.value) == randomNumber){ // verifica se o número gerado pelo click é igula ao número aleatório gerado.
+    screem1.classList.add("hide");
+    screem2.classList.remove("hide");
+    document.querySelector(".screenTwo h2").innerText = `Acertou em ${attempts} tentativas`
   }
+  inputNumber.value = "" // deixar o input em branco depois de acionar o button
+
+  attempts++
 }
 
-for(let stud of students){
-  avarage(stud);
+// eventos
+
+const buttonTry = document.querySelector("#buttonTry");
+const buttonReset = document.querySelector("#buttonReset");
+
+buttonTry.addEventListener("click", handleTryClick);
+buttonReset.addEventListener("click", function(){
+  screem1.classList.remove("hide");
+  screem2.classList.add("hide");
+  attempts = 1;
 }
+)

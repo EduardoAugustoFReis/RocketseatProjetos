@@ -6,205 +6,83 @@
 :root{
   font-size: 62.5%;
 }
-.page{
-  width: 430px;
-  height: 565px;
-  text-align: center;
-  margin: auto;
-}
 body{
-  font-family: 'Mulish', sans-serif;
+  background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
-header{
-  background: #F9F4FB;
-  width: 430px;
-  height: 679px;
+body, button, input{
+  font-family: 'DM Sans', sans-serif;
 }
-header h1{
-  font-size: 3.2rem;
-  line-height: 4.0rem;
-  color: #B52184;
-
-  margin-top: 1.7rem;
-  margin-bottom: 5px;
-}
-header p{
-  font-size: 2.0rem;
-  line-height: 2.5rem;
-  font-weight: 600;
-  color: #312D64;
-}
-.rectangle{
-  margin: auto; 
-  margin-top: 70px;
-}
-main{
+main button{
+  background: #7879F1;
+  border-radius: 0px 4px 4px 0px;
+  opacity: 0.9;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
   text-align: center;
-  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
-  display: flex;
-  flex-direction: column;
-  gap: 4.9rem;
-  width: 430px;
+  cursor: pointer;
 }
-main h2{
-  font-size: 2.9rem;
-  line-height: 3.7rem;
-  color: #B52184;
+button:hover{
+  background: #6464ec;
+}
+
+.hide{
+  display: none;
+}
+
+main{
+  background: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0,0,0.1);
+  border-radius: 6px;
+  padding: 4.8rem 6.4rem 6.4rem;
+  width: min(42.8rem, 90%);
+  text-align: center;
+}
+
+/* ScreenOne*/
+main h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+  color: rgba(52, 53, 91, 1);
 }
 main p{
-font-weight: 600;
-font-size: 1.6rem;
-line-height: 2.0rem;
-color: #312D64;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: rgba(52, 53, 91, 0.8);
+  opacity: 0.8;
 }
-.cards{
+main form{
+  margin-top: 4.8rem;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 5.0rem;
-  margin-left: 3.9rem;
-  margin-right: 3.9rem;
-  border: 1px solid #FFF;
-  border-radius: 2.0rem;
-  background-color: #FFF;
 }
-#card-one{
-  margin-top: 4.0rem;
-}
-.cards img{
-  padding-top: 30px;
-  padding-left: 26px;
-  padding-right: 250px;
-}
-.cards p{
-  text-align: left;
-  padding-left: 26px;
-  padding-bottom: 10px;
-}
-#last-card{
-  margin-bottom: 4.0rem;
-}
-section{
-  width: 43.0rem;
-  height: 61.0rem;
-  background: #F9F4FB
-}
-section fieldset{
+main input, button{
   border: none;
+  padding: 1.6rem;
 }
-section legend{
-  font-size: 3.2rem;
-  line-height: 4.0rem;
-  font-weight: 900;
-  color: #B52184;
-  padding-top: 7.8rem;
-  padding-left: 4.0rem;
-  padding-right: 11.8rem;
-  padding-bottom: 4.3rem;
-}
-.input-wraper{
-  display: block;
-  padding-bottom: 3.6rem;
-}
-.input-label{
-  display: block;
-  font-size: 1.5rem;
-  color: #B52184;
-  text-align: center;
-}
-.input-wraper input{
-  width: 34.8rem;
-  height: 4.8rem;
-  border: 1.5px solid #312D64;
-  border-radius: 1.6rem;
-  padding-left: 1.2rem;
-}
-section textarea{
-  font-family: 'Mulish', sans-serif;
-  width: 348px;
-  height: 126px;
-  border: 1.5px solid #312D64;
-  border-radius: 1.6rem;
-  margin-bottom: 2.4rem;
-  padding-top: 1.6rem;
-  padding-left: 1.2rem;
+main input{
+  background: #DCE2E9;
+  width: 4.3rem;
+  height: 5.3rem;
+  border-radius: 4px 0px 0px 4px;
 }
 
-#button input{
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.4rem;
-  line-height: 2.4rem;
-  border-radius: 1.6rem;
+/*ScreenTwo*/
 
-  width: 15.1rem;
-  height: 4.5rem;
-  margin-left: 4.3rem;
-  margin-right: 23.6rem;
+main h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-weight: normal;
+  color: rgba(52, 53, 91, 0.8);
+  margin-bottom: 3.3rem;
+}
+.screenTwo button{
+  border-radius: 4px;
+}
 
-  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
-}
-footer{
-  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
-  width: 43.0rem;
-  height: 8.0rem;
-}
-footer p{
-  color: #FFF;
-  font-weight: 600;
-  font-size: 1.9rem;
-  line-height: 2.4rem;
-  padding-top: 3.2rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
-}
-@media (min-width: 70.0rem){
-  .page{
-    width: 146.5rem;
-    height: 186.5rem;
-  }
-  header{
-    width: 100%;
-  }
-  .hero-text{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
-   
-  }
-  .rectangle{
-    margin-top: 8.0rem;
-  }
-  main{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  #card-one{
-    margin: auto;
-    margin-left: 7.5rem;
-    margin-top: 6.0rem;
-    margin-bottom: 6.0rem;
-  }
-  #last-card{
-    margin: auto;
-    margin-right: 100px;
-  }
-  section{
-    width: 100%;
-    background-image: url(images/estrelas-rosas.png);
-    background-repeat: no-repeat;
-    background-attachment: local;
-    background-position: bottom right;
-    display: flex;
-    align-items: center;
-  }
-  section form{
-    margin-left: 80px;
-  }
-  footer{
-    width: 100%;
-  }
-}
