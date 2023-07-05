@@ -1,31 +1,34 @@
-let hi = alert("Hello Word!");
-let userNumberOne = prompt("Digite um número: ");
-let userNumberTwo = prompt("Digite um segundo número: ");
+import {modal} from "./modals.js"
+import {alertError} from "./alert-error.js"
+import {notNUmber, calculateIMC} from "./utils.js";
 
-userNumberOne = Number(userNumberOne);
-userNumberTwo = Number(userNumberTwo);
+const form = document.querySelector('form');
+const inputWeight = document.querySelector('#weight');// pegar o input
+const inputHeight = document.querySelector('#height'); 
 
-let sumTwoNumbers = userNumberOne + userNumberTwo;
-alert(`A soma dos números digitados é de ${sumTwoNumbers}.`);
+form.onsubmit = (event)=>{
 
-let subTwoNumbers = userNumberOne - userNumberTwo;
-alert(`A subtração dos números digitados é de ${subTwoNumbers}.`);
+  event.preventDefault();
 
-let multTwoNumbers = userNumberOne * userNumberTwo;
-alert(`A multiplicação dos números digitados é de ${multTwoNumbers}.`);
+  let weight = inputWeight.value;// pegar o valor do input
+  let height = inputHeight.value;
 
-let divTwoNumbers = (userNumberOne / userNumberTwo).toFixed(2);
-alert(`A divisão dos números digitados é de ${divTwoNumbers}.`);
+  let weightOrHeightIsNotANumber = notNUmber(weight) || notNUmber(height); // verificar se é um tipo number
 
-if(userNumberOne %2 == 0){
-  alert("O primeiro número digitado é par.");
-}else{
-  alert("O primeiro número digitado é ímpar");
+  if(weightOrHeightIsNotANumber){ // se for "true" dispara o alerta de erro
+    alertError.open();
+    return;
+  }
+
+  alertError.close() // retirar o alerta de erro
+
+  let result = calculateIMC(weight,height);
+  let msg = `Seu IMC é de ${result}`
+
+  modal.message.innerHTML = msg; 
+  modal.open() // abrir o modal
 }
 
-if(userNumberTwo %2 == 0){
-  alert("O primeiro número digitado é par.");
-}else{
-  alert("O primeiro número digitado é ímpar");
+inputWeight.oninput = () => { // fechar o alerta de erro ao interagir com o input weight
+  alertError.close()
 }
-
